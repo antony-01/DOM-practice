@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+       var a=localStorage.getItem("imag");
+
+        var b=document.createElement("img");
+        document.body.appendChild(b);
+        b.setAttribute("src",a);
+        b.style.width="400px";
+        b.style.height="400px";
+        b.style.display="block";
+        b.style.marginBottom="10px";
+        b.style.marginLeft="400px";
+        b.style.border="1px solid black"
+        
+
+        var c=document.createElement("button");
+        document.body.appendChild(c);
+        c.innerText="Back";
+        c.style.marginLeft="400px";
+        c.addEventListener('click',()=>
+        {
+            window.close();
+        })
+  
+
+    </script>
+
+</body>
+</html>
